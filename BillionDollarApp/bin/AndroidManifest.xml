@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="18"
         android:targetSdkVersion="18" />
 
     <application
@@ -21,6 +21,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.osu.billiondollarapp.SeatingStatus"
+            android:label="@string/title_activity_seating_status" >
+        </activity>
+        <activity
+            android:name="com.osu.billiondollarapp.Sign_In"
+            android:label="@string/title_activity_sign__in" >
         </activity>
     </application>
 

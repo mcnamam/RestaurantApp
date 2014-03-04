@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme for API 14+. This theme completely replaces
@@ -7,6 +7,21 @@
     -->
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
+      <item name="@android:actionBarTabBarStyle">@style/BarStyle</item>
+      <item name="android:actionBarStyle">@style/BlueActionBar</item>
     </style>
+    
+    <style name="WhiteText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">#FFFFFF</item>
+</style>
+    
+	<style name="BlueActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#228eff</item>
+        <item name="android:titleTextStyle">@style/WhiteText</item>
+    </style>
+
+<style name="BarStyle" parent="android:Widget.Holo.Light.ActionBar">
+    <item name="android:background">#FFFFFF</item>
+</style>
 
 </resources>
